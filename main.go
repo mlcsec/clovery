@@ -42,15 +42,16 @@ func main() {
     flag.StringVar(&azureRegion, "azu-reg", "", "\nRegions: (-azv option only)\n===========================\naustraliacentral\naustraliacentral2\naustraliaeast\naustraliasoutheast\nbrazilsouth\ncanadacentral\ncanadaeast\ncentralindia\ncentralus\neastasia\neastus\neastus2\nfrancecentral\nfrancesouth\njapaneast\njapanwest\nkoreacentral\nkoreasouth\nnorthcentralus\nnortheurope\nsouthafricanorth\nsouthafricawest\nsouthcentralus\nsoutheastasia\nsouthindia\nuksouth\nukwest\nwestcentralus\nwesteurope\nwestindia\nwestus\nwestus2\n")
     flag.StringVar(&w, "w", "", "wordlist")
     flag.Parse()
-    title := 
+    title :=
 `
-           __                     
-      ____/ /__ _  _____ ______ __
-     / __/ / _ \ |/ / -_) __/ // /
-     \__/_/\___/___/\__/_/  \_, / 
-                           /___/  
-		
-		     ~ Cloud Discovery  ~
+          __
+    _____/ /___ _   _____  _______  __
+   / ___/ / __ \ | / / _ \/ ___/ / / /
+  / /__/ / /_/ / |/ /  __/ /  / /_/ /
+  \___/_/\____/|___/\___/_/   \__, /
+                             /____/
+
+                        ~ Cloud Discovery ~
 `
     fmt.Println("\033[36;1m"+title+"\033[0m")
     if all {
