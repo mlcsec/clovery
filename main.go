@@ -12,7 +12,6 @@ import (
 )
 
 var concurrency int
-var all bool
 var aws bool
 var gcp bool
 var azb bool
@@ -29,7 +28,6 @@ var azReg []string
 
 func main() {
     flag.IntVar(&concurrency, "c", 20, "concurrency level\n")
-    flag.BoolVar(&all, "all", false, "run all checks (-aws, -gcp, -azb, -azd, -azw)\n")
     flag.BoolVar(&aws, "aws", false, "check s3 buckets\n")
     flag.BoolVar(&gcp, "gcp", false, "check gcp buckets\n")
     flag.BoolVar(&azb, "azb", false, "check azure blobs\n")
@@ -54,13 +52,6 @@ func main() {
                         ~ Cloud Discovery ~
 `
     fmt.Println("\033[36;1m"+title+"\033[0m")
-    if all {
-        awsCheck()
-        gcpCheck()
-        azureBlob()
-        azureDb()
-        azureWeb()
-    }
     if aws {
         awsCheck()
     }
