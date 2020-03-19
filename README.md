@@ -1,5 +1,5 @@
 # clovery
-Cloud Discovery - check for open AWS, GCP, Alibaba, and Azure cloud services.  Check out the [demo](https://mlcsec.com/release-clovery/).
+Cloud Discovery - check for open AWS, GCP, Alibaba, and Azure cloud services.  Check out the [demo](https://mlcsec.com/release-clovery/#demo).
 
 <br>
 
