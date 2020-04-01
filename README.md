@@ -12,7 +12,6 @@ Just started learning Go, any feedback on usage/code optimisation would be appre
 
 ## Info
 * Cloud providers will RATE LIMIT you if usage too frequent/heavy or wordlist too big
-* May have to configure max file descriptors with `ulimit -n <max>` depending on wordlist size
 * 403 errors aid in further discovery, if company/keyword returns a lot of 403 errors - consider mutating the wordlist
 
 <br>
