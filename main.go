@@ -371,7 +371,7 @@ func main() {
   \___/_/\____/|___/\___/_/   \__, /
                              /____/
 
-                        ~ Cloud Discovery ~
+                        - Cloud Discovery -
 `
     fmt.Println("\033[36;1m"+title+"\033[0m")
     if aws {
