@@ -255,7 +255,7 @@ func azureDb() {
                 if err != nil {
                     continue
                 }
-                fmt.Println("[\033[32mREGISTERED DNS\033[0m] \033[0m" + url + "\033[0m")
+                fmt.Println(url + " [\033[32mREGISTERED DNS\033[0m] \033[0m")
             }
         }()
     }
@@ -335,7 +335,7 @@ func azureVm() {
                 if err != nil {
                     continue
                 }
-                fmt.Println("[\033[32mREGISTERED VM\033[0m] \033[0m" + url + "\033[0m")
+                fmt.Println(url + " [\033[32mREGISTERED VM\033[0m] \033[0m")
             }
         }()
     }
@@ -385,12 +385,14 @@ func main() {
     if ali {
         alReg = []string{"oss-cn-hangzhou","oss-cn-shanghai","oss-cn-qingdao","oss-cn-beijing","oss-cn-zhangjiakou","oss-cn-huhehaote","oss-cn-shenzhen","oss-cn-chengdu","oss-cn-hongkong","oss-us-west-1","oss-us-east-1","oss-ap-southeast-1","oss-ap-southeast-2","oss-ap-southeast-3","oss-ap-southeast-5","oss-ap-northeast-1","oss-ap-south-1","oss-eu-central-1","oss-eu-west-1","oss-me-east-1"}
         if alibabaRegion == "" {
-            fmt.Println("\n[\033[31;1m-\033[0m] \033[31;1mNo region supplied\033[0m")
+            fmt.Println("\n[\033[31;1m!\033[0m] \033[31;1mNo region supplied\033[0m")
+            fmt.Println("[\033[31;1m!\033[0m] \033[31;1mcat <wordlist> | clovery -ali -ali-reg <region>\033[0m")
+            fmt.Println("oss-cn-hangzhou\noss-cn-shanghai\noss-cn-qingdao\noss-cn-beijing\noss-cn-zhangjiakou\noss-cn-huhehaote\noss-cn-shenzhen\noss-cn-chengdu\noss-cn-hongkong\noss-us-west-1\noss-us-east-1\noss-ap-southeast-1\noss-ap-southeast-2\noss-ap-southeast-3\noss-ap-southeast-5\noss-ap-northeast-1\noss-ap-south-1\noss-eu-central-1\noss-eu-west-1\noss-me-east-1")
             os.Exit(0)
         }
         _, found := Find(alReg, alibabaRegion)
         if !found {
-            fmt.Println("\n[\033[31;1m-\033[0m] \033[31;1m" + alibabaRegion + " not valid Alibaba region, see below:\033[0m")
+            fmt.Println("\n[\033[31;1m!\033[0m] \033[31;1m" + alibabaRegion + " not valid Alibaba region, see below:\033[0m")
             fmt.Println("oss-cn-hangzhou\noss-cn-shanghai\noss-cn-qingdao\noss-cn-beijing\noss-cn-zhangjiakou\noss-cn-huhehaote\noss-cn-shenzhen\noss-cn-chengdu\noss-cn-hongkong\noss-us-west-1\noss-us-east-1\noss-ap-southeast-1\noss-ap-southeast-2\noss-ap-southeast-3\noss-ap-southeast-5\noss-ap-northeast-1\noss-ap-south-1\noss-eu-central-1\noss-eu-west-1\noss-me-east-1")
             os.Exit(0)
         }
@@ -408,12 +410,14 @@ func main() {
     if azv {
         azReg = []string{"australiacentral","australiacentral2","australiaeast","australiasoutheast","brazilsouth","canadacentral","canadaeast","centralindia","centralus","eastasia","eastus","eastus2","francecentral","francesouth","japaneast","japanwest","koreacentral","koreasouth","northcentralus","northeurope","southafricanorth","southafricawest","southcentralus","southeastasia","southindia","uksouth","ukwest","westcentralus","westeurope","westindia","westus","westus2"}
         if azureRegion == "" {
-            fmt.Println("\n[\033[31;1m-\033[0m] \033[31;1mNo region supplied\033[0m")
+            fmt.Println("\n[\033[31;1m!\033[0m] \033[31;1mNo region supplied\033[0m")
+            fmt.Println("[\033[31;1m!\033[0m] \033[31;1mcat <wordlist> | clovery -azv -azu-reg <region>\033[0m")
+            fmt.Println("australiacentral\naustraliacentral2\naustraliaeast\naustraliasoutheast\nbrazilsouth\ncanadacentral\ncanadaeast\ncentralindia\ncentralus\neastasia\neastus\neastus2\nfrancecentral\nfrancesouth\njapaneast\njapanwest\nkoreacentral\nkoreasouth\nnorthcentralus\nnortheurope\nsouthafricanorth\nsouthafricawest\nsouthcentralus\nsoutheastasia\nsouthindia\nuksouth\nukwest\nwestcentralus\nwesteurope\nwestindia\nwestus\nwestus2")
             os.Exit(0)
         }
         _, found := Find(azReg, azureRegion)
         if !found {
-            fmt.Println("\n[\033[31;1m-\033[0m] \033[31;1m" + azureRegion + " not valid Azure region, see below:\033[0m")
+            fmt.Println("\n[\033[31;1m!\033[0m] \033[31;1m" + azureRegion + " not valid Azure region, see below:\033[0m")
             fmt.Println("australiacentral\naustraliacentral2\naustraliaeast\naustraliasoutheast\nbrazilsouth\ncanadacentral\ncanadaeast\ncentralindia\ncentralus\neastasia\neastus\neastus2\nfrancecentral\nfrancesouth\njapaneast\njapanwest\nkoreacentral\nkoreasouth\nnorthcentralus\nnortheurope\nsouthafricanorth\nsouthafricawest\nsouthcentralus\nsoutheastasia\nsouthindia\nuksouth\nukwest\nwestcentralus\nwesteurope\nwestindia\nwestus\nwestus2")
             os.Exit(0)
         }
