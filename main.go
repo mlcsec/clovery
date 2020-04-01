@@ -23,7 +23,6 @@ var ali bool
 var fe bool
 var azureRegion string
 var alibabaRegion string
-var w string
 var alReg []string
 var azReg []string
 
@@ -362,7 +361,6 @@ func main() {
     flag.BoolVar(&fe, "fe", false, "show 403 forbidden errors\n")
     flag.StringVar(&alibabaRegion, "ali-reg", "", "\nRegions: (-ali option only)\n===========================\noss-cn-hangzhou\noss-cn-shanghai\noss-cn-qingdao\noss-cn-beijing\noss-cn-zhangjiakou\noss-cn-huhehaote\noss-cn-shenzhen\noss-cn-chengdu\noss-cn-hongkong\noss-us-west-1\noss-us-east-1\noss-ap-southeast-1\noss-ap-southeast-2\noss-ap-southeast-3\noss-ap-southeast-5\noss-ap-northeast-1\noss-ap-south-1\noss-eu-central-1\noss-eu-west-1\noss-me-east-1\n")
     flag.StringVar(&azureRegion, "azu-reg", "", "\nRegions: (-azv option only)\n===========================\naustraliacentral\naustraliacentral2\naustraliaeast\naustraliasoutheast\nbrazilsouth\ncanadacentral\ncanadaeast\ncentralindia\ncentralus\neastasia\neastus\neastus2\nfrancecentral\nfrancesouth\njapaneast\njapanwest\nkoreacentral\nkoreasouth\nnorthcentralus\nnortheurope\nsouthafricanorth\nsouthafricawest\nsouthcentralus\nsoutheastasia\nsouthindia\nuksouth\nukwest\nwestcentralus\nwesteurope\nwestindia\nwestus\nwestus2\n")
-    flag.StringVar(&w, "w", "", "wordlist")
     flag.Parse()
     title :=
 `
