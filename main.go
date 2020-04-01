@@ -351,7 +351,7 @@ func azureVm() {
 
 func main() {
     flag.IntVar(&concurrency, "c", 20, "concurrency level\n")
-    flag.IntVar(&to, "t", 10000, "timeout (milliseconds)")
+    flag.IntVar(&to, "t", 10000, "timeout (milliseconds)\n")
     flag.BoolVar(&aws, "aws", false, "check s3 buckets\n")
     flag.BoolVar(&gcp, "gcp", false, "check gcp buckets\n")
     flag.BoolVar(&azb, "azb", false, "check azure blobs\n")
