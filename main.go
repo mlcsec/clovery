@@ -70,7 +70,7 @@ func awsCheck() {
                 }
 		        if fe {
 		            if req.StatusCode == 403 {
-			            fmt.Println("[\033[31m403\033[0m] \033[0m" + url + "\033[0m")
+			            fmt.Println(url + " [\033[31m403\033[0m] \033[0m")
 		           }
 		       }
             }
