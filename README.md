@@ -3,11 +3,6 @@ Cloud Discovery - check for open AWS, GCP, Alibaba, and Azure cloud services.  C
 
 <br>
 
-## Feedback
-Just started learning Go, any feedback on usage/code optimisation would be appreciated!
-
-<br>
-
 ## Info
 * Cloud providers will RATE LIMIT you if usage too frequent/heavy or wordlist too big - won't receive any output
 * `403` errors aid in further discovery, if company/keyword returns a lot of `403` errors - consider mutating the wordlist
