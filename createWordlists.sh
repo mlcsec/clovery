@@ -5,9 +5,6 @@ if [ $# -ne 2 ]; then
     exit 1;
 fi
 
-cp common.txt buckets-$1.txt
-cp common.txt buckets$1.txt
-
 sed -e "s/^/$1-/" $2 >> $1-buckets.txt
 sed -e "s/^/$1/" $2 >> $1buckets.txt
 
