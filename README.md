@@ -25,6 +25,7 @@ Cloud Discovery - check for open AWS, GCP, Alibaba, and Azure cloud services.  C
 |-azb  |bool|check azure blobs|
 |-azd  |bool|check azure databases|
 |-azu-reg|string|Regions: (-azv option only)<br>===========================<br>australiacentral<br>australiacentral2<br>australiaeast<br>australiasoutheast<br>brazilsouth<br>canadacentral<br>canadaeast<br>centralindia<br>centralus<br>eastasia<br>eastus<br>eastus2<br>francecentral<br>francesouth<br>japaneast<br>japanwest<br>koreacentral<br>koreasouth<br>northcentralus<br>northeurope<br>southafricanorth<br>southafricawest<br>southcentralus<br>southeastasia<br>southindia<br>uksouth<br>ukwest<br>westcentralus<br>westeurope<br>westindia<br>westus<br>westus2|
+|-azv  |bool|check azure virtual machines (-azu-reg required)|
 |-azw  |bool|check azure websites|
 |-c    |int|concurrency level (default 20)|
 |-fe   |bool|show 403 forbidden errors|
