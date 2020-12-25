@@ -1,7 +1,7 @@
 # clovery
 Cloud Discovery - check for open AWS, GCP, Alibaba, and Azure cloud services.  Some demoes can be found [here](https://mlcsec.com/release-clovery/#demos).
 
-Working on the development branch to implement relevant SDKs and extract exact permissions per open storage service.
+* updating code currently
 
 <br>
 
