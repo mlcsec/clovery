@@ -1,7 +1,5 @@
 # clovery
-Cloud Discovery - check for open AWS, GCP, Alibaba, and Azure cloud services.  Some demoes can be found [here](https://mlcsec.com/release-clovery/#demos).
-
-* updating code currently
+Cloud Discovery - check for open AWS, GCP, Alibaba, and Azure cloud services.  Some demos can be found [here](https://mlcsec.com/release-clovery/#demos).
 
 <br>
 
@@ -11,9 +9,14 @@ Cloud Discovery - check for open AWS, GCP, Alibaba, and Azure cloud services.  S
 
 <br>
 
+## Todo
+* add relevant sdks to dump permissions
+
+<br>
+
 ## Installation
 ```
-▶ go get github.com/mlcsec/clovery
+go get github.com/mlcsec/clovery
 ```
 
 <br>
