@@ -9,6 +9,7 @@ import (
     "sync"
     "flag"
     "time"
+    "github.com/mlcsec/clovery/cloud"
 )
 
 var concurrency int
