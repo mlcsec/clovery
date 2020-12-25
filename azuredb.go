@@ -4,10 +4,8 @@ import (
     "fmt"
     "bufio"
     "os"
-    "net/http"
     "net"
     "sync"
-    "time"
 )
 
 func azureDb() {
