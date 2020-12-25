@@ -36,7 +36,7 @@ func Find(slice []string, val string) (int, bool) {
     return -1, false
 }
 
-func awsCheck() {
+/*func awsCheck() {
     fmt.Println("\n[\033[36;1m-\033[0m] \033[36;1mAWS Buckets: \033[0m")
     fmt.Println("====================================================")
     timeout := time.Duration(to * 1000000)
@@ -347,7 +347,7 @@ func azureVm() {
     close(azvjobs)
     wg.Wait()
     fmt.Println("====================================================")
-}
+}*/
 
 func main() {
     flag.IntVar(&concurrency, "c", 20, "concurrency level\n")
