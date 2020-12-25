@@ -1,4 +1,14 @@
-package cloud
+package main
+
+import (
+    "fmt"
+    "bufio"
+    "os"
+    "net/http"
+    "net"
+    "sync"
+    "time"
+)
 
 func awsCheck() {
     fmt.Println("\n[\033[36;1m-\033[0m] \033[36;1mAWS Buckets: \033[0m")

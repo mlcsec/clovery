@@ -1,4 +1,14 @@
-package cloud
+package main
+
+import (
+    "fmt"
+    "bufio"
+    "os"
+    "net/http"
+    "net"
+    "sync"
+    "time"
+)
 
 func alibabaOss() {
     fmt.Println("\n[\033[36;1m-\033[0m] \033[36;1mAlibaba OSS: \033[0m")

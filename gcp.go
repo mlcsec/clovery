@@ -1,4 +1,14 @@
-package cloud
+package main
+
+import (
+    "fmt"
+    "bufio"
+    "os"
+    "net/http"
+    "net"
+    "sync"
+    "time"
+)
 
 func gcpCheck() {
     fmt.Println("\n[\033[36;1m-\033[0m] \033[36;1mGCP Buckets: \033[0m")
