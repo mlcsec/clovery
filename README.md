@@ -1,7 +1,7 @@
 # clovery
 Cloud Discovery - check for open AWS, GCP, Alibaba, and Azure cloud services.  
 
-<a href="https://asciinema.org/a/315838" target="_blank"><img src="https://asciinema.org/a/315838.svg" /></a>
+<a href="https://asciinema.org/a/381917"><img src="https://asciinema.org/a/381917.png" alt="asciicast" /></a>
 <br>
 
 ## Info
