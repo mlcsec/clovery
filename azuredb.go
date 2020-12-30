@@ -9,7 +9,7 @@ import (
 )
 
 func azureDb() {
-    fmt.Println("\n[\033[36;1m-\033[0m] \033[36;1mAzure Databases: \033[0m")
+    fmt.Println("[\033[36;1m*\033[0m] \033[36;1mAzure Databases: \033[0m")
     fmt.Println("====================================================")
     azdjobs := make(chan string)
     var wg sync.WaitGroup

@@ -11,7 +11,7 @@ import (
 )
 
 func alibabaOss() {
-    fmt.Println("\n[\033[36;1m-\033[0m] \033[36;1mAlibaba OSS: \033[0m")
+    fmt.Println("[\033[36;1m*\033[0m] \033[36;1mAlibaba OSS: \033[0m")
     fmt.Println("====================================================")
     timeout := time.Duration(to * 1000000)
     var tr = &http.Transport{
