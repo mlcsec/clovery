@@ -6,7 +6,7 @@ Cloud Discovery - check for open AWS, GCP, Alibaba, and Azure cloud services.
 
 ## Info
 * Cloud providers will rate limit you if usage too frequent/heavy or wordlist too big (no output)
-* `403` errors aid in further discovery = consider mutating wordlist
+* `403` errors aid in further discovery - consider mutating wordlist
 
 <br>
 
