@@ -8,7 +8,7 @@ fi
 sed -e "s/^/$1-/" $2 >> $1-buckets.txt
 sed -e "s/^/$1/" $2 >> $1buckets.txt
 
-# WHY DOESN'T SED WORK FOR END OF LINE 
+# WHY YOU NOT WORK SED
 
 #sed -e "s/$/-$1/" $2 >> buckets-$1.txt
 ex +"%s/$/-demo/g" -cwq buckets-$1.txt
