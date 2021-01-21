@@ -1,5 +1,5 @@
 # clovery
-Cloud Discovery - check for open AWS, GCP, Alibaba, and Azure cloud services.  
+Cloud Discovery - brute force public AWS, GCP, Alibaba, and Azure cloud services.  
 
 <a href="https://asciinema.org/a/381917"><img src="https://asciinema.org/a/381917.png" alt="asciicast" /></a>
 <br>
